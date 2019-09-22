@@ -1,0 +1,25 @@
+[{
+        "name": "solr",
+        "urls": [{
+                "name": "page1",
+                "url": "http://www.baidu.com"
+            },
+            {
+                "name": "page2",
+                "url": "http://www.360.cn"
+            }
+        ]
+    },
+    {
+        "name": "writer",
+        "urls": [{
+                "name": "page1",
+                "url": "http://www.sina.com"
+            },
+            {
+                "name": "page2",
+                "url": "http://www.sohu.com"
+            }
+        ]
+    }
+]
