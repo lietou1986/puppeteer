@@ -1,24 +1,24 @@
 [{
-        "name": "solr",
+        "name": "搜索平台",
         "urls": [{
-                "name": "page1",
-                "url": "http://www.baidu.com"
+                "name": "广告",
+                "url": "https://grafana.zhaopin.com/d/pCc3ZTjik/sou-suo-ping-tai?refresh=30s&orgId=1&var-environment=docker-a&var-aggregator=%2Fadvert%2Fquery%2Fcustom&var-app_name=java-s-gateway-searcher"
             },
             {
-                "name": "page2",
-                "url": "http://www.360.cn"
+                "name": "热词",
+                "url": "https://grafana.zhaopin.com/d/pCc3ZTjik/sou-suo-ping-tai?refresh=30s&orgId=1&var-environment=docker-a&var-aggregator=%2Fpositionword%2Fquery&var-app_name=java-s-gateway-searcher"
             }
         ]
     },
     {
-        "name": "writer",
+        "name": "搜索API",
         "urls": [{
-                "name": "page1",
-                "url": "http://www.sina.com"
+                "name": "resume",
+                "url": "https://grafana.zhaopin.com/d/2wTaHdYmk/sou-suo-apijian-kong?refresh=30s&orgId=1&var-environment=docker-a&var-environment=docker-b&var-api=rdsearch&var-aggregator=resume%2F&var-grayName=%2Frecommend%2Fsmarter&var-solr=172.25.7.64:8081%2Fsolr%2FpositionCloud&var-solr=172.25.7.87:8081%2Fsolr%2FpositionCloud&var-solr=172.25.7.90:8081%2Fsolr%2FpositionCloud&var-solr=172.25.7.93:8081%2Fsolr%2FpositionCloud&var-solr=solr-recommend.zpidc.com%2Fsolr%2Fposition"
             },
             {
-                "name": "page2",
-                "url": "http://www.sohu.com"
+                "name": "prapi",
+                "url": "https://grafana.zhaopin.com/d/2wTaHdYmk/sou-suo-apijian-kong?refresh=30s&orgId=1&var-environment=docker-a&var-environment=docker-b&var-api=prapi&var-aggregator=position%2F&var-grayName=%2Fposition%2Fmbscore_1&var-solr=172.25.7.64:8081%2Fsolr%2FpositionCloud&var-solr=172.25.7.87:8081%2Fsolr%2FpositionCloud&var-solr=172.25.7.90:8081%2Fsolr%2FpositionCloud&var-solr=172.25.7.93:8081%2Fsolr%2FpositionCloud&var-solr=solr-recommend.zpidc.com%2Fsolr%2Fposition"
             }
         ]
     }
