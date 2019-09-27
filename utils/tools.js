@@ -1,10 +1,11 @@
 'use strict';
 
-var moment = require('moment');
-var uuid = require('uuid');
-var request = require('request');
-var validator = require('validator');
-var utility = require('utility');
+const moment = require('moment');
+const uuid = require('uuid');
+const request = require('request');
+const validator = require('validator');
+const utility = require('utility');
+const fs = require('fs');
 
 moment.locale('zh-cn'); // 使用中文
 
@@ -293,3 +294,24 @@ String.prototype.padHelper = function (total, char, isRightpadded) {
     return this;
   }
 }
+
+exports.clearDir=function(path){
+  let files = [];
+  if(fs.existsSync(path)){
+      files = fs.readdirSync(path);
+      files.forEach((file, index) => {
+          let curPath = path + "/" + file;
+          if(fs.statSync(curPath).isDirectory()){
+              delDir(curPath); //递归删除文件夹
+          } else {
+              fs.unlinkSync(curPath); //删除文件
+          }
+      });
+  }
+}
+
+exports.delDir=function(path){
+  this.clearDir(path);
+  fs.rmdirSync(path);
+}
+

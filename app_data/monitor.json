@@ -6,7 +6,7 @@
             },
             {
                 "name": "服务器监控",
-                "url": "https://grafana.zhaopin.com/d/deVt2T8mz/solrfu-wu-qi-jian-kong?orgId=1&from=now-5m&to=now"
+                "url": "https://grafana.zhaopin.com/d/deVt2T8mz/solrfu-wu-qi-jian-kong?orgId=1&from=now-5m&to=now&var-positionIp=http:%2F%2F172.25.7.69:8081%2Fsolr&var-recommendIp=All&var-resumeIp=All"
             }
         ]
     },

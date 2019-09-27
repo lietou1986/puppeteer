@@ -4,8 +4,13 @@ const puppeteer = require('puppeteer');
 const logger = require('../runtime').logger;
 const appData = require('../runtime').appData;
 const tools = require('../runtime').tools;
+const baseDir="data/screenshot/";
 
 exports.screenshot = async function () {
+
+    //清空目录
+    tools.clearDir(baseDir);
+
     const browser = await puppeteer.launch();
     logger.info(await browser.version());
     const page = await browser.newPage();
@@ -34,7 +39,7 @@ async function screenshotPage(page, group, url) {
         width: 1800,
         height:2600
     });
-    await page.waitFor(3000);
+    await page.waitFor(6000);
     await autoScroll(page);
     await page.screenshot({
         path: 'data/screenshot/' + group.name + '_' + url.name + '.png',
