@@ -29,5 +29,13 @@
                 "url": "https://grafana.zhaopin.com/d/2wTaHdYmk/sou-suo-apijian-kong?refresh=30s&orgId=1"
             }
         ]
+    },
+    {
+        "name": "写入",
+        "urls": [{
+                "name": "职位特征写入",
+                "url": "https://grafana.zhaopin.com/d/mk9EkBLiz/solrxie-ru-jian-kong?refresh=10s&orgId=1&from=now-15m&to=now&var-environment=docker-spider&var-pulsar_env=idc-b&var-pulsar_topic=job.partial.solr.result&var-subscription=All&var-collection=All"
+            }
+        ]
     }
 ]
