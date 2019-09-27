@@ -1,24 +1,32 @@
 [{
-        "name": "搜索平台",
+        "name": "Solr",
         "urls": [{
-                "name": "广告",
-                "url": "https://grafana.zhaopin.com/d/pCc3ZTjik/sou-suo-ping-tai?refresh=30s&orgId=1&var-environment=docker-a&var-aggregator=%2Fadvert%2Fquery%2Fcustom&var-app_name=java-s-gateway-searcher"
+                "name": "CPU监控",
+                "url": "https://grafana.zhaopin.com/d/1BBuueQmz/solrde-cpujian-kong?refresh=1m&orgId=1"
             },
             {
-                "name": "热词",
-                "url": "https://grafana.zhaopin.com/d/pCc3ZTjik/sou-suo-ping-tai?refresh=30s&orgId=1&var-environment=docker-a&var-aggregator=%2Fpositionword%2Fquery&var-app_name=java-s-gateway-searcher"
+                "name": "服务器监控",
+                "url": "https://grafana.zhaopin.com/d/deVt2T8mz/solrfu-wu-qi-jian-kong?orgId=1&from=now-5m&to=now"
             }
         ]
     },
     {
         "name": "搜索API",
         "urls": [{
-                "name": "resume",
-                "url": "https://grafana.zhaopin.com/d/2wTaHdYmk/sou-suo-apijian-kong?refresh=30s&orgId=1&var-environment=docker-a&var-environment=docker-b&var-api=rdsearch&var-aggregator=resume%2F&var-grayName=%2Frecommend%2Fsmarter&var-solr=172.25.7.64:8081%2Fsolr%2FpositionCloud&var-solr=172.25.7.87:8081%2Fsolr%2FpositionCloud&var-solr=172.25.7.90:8081%2Fsolr%2FpositionCloud&var-solr=172.25.7.93:8081%2Fsolr%2FpositionCloud&var-solr=solr-recommend.zpidc.com%2Fsolr%2Fposition"
+                "name": "职位推荐",
+                "url": "https://grafana.zhaopin.com/d/hgBhWWWWz/sou-suo-apijian-kong-zhi-wei-tui-jian?refresh=30s&orgId=1&var-environment=docker-a&var-environment=docker-b&var-apiUrl=All&var-gatewayUrl=All&var-solr=resumeCloud&var-emptyType=empty"
             },
             {
-                "name": "prapi",
-                "url": "https://grafana.zhaopin.com/d/2wTaHdYmk/sou-suo-apijian-kong?refresh=30s&orgId=1&var-environment=docker-a&var-environment=docker-b&var-api=prapi&var-aggregator=position%2F&var-grayName=%2Fposition%2Fmbscore_1&var-solr=172.25.7.64:8081%2Fsolr%2FpositionCloud&var-solr=172.25.7.87:8081%2Fsolr%2FpositionCloud&var-solr=172.25.7.90:8081%2Fsolr%2FpositionCloud&var-solr=172.25.7.93:8081%2Fsolr%2FpositionCloud&var-solr=solr-recommend.zpidc.com%2Fsolr%2Fposition"
+                "name": "职位搜索",
+                "url": "https://grafana.zhaopin.com/d/JmMDMhmZk/sou-suo-apijian-kong-zhi-wei-sou-suo?refresh=15m&orgId=1&var-environment=docker-a&var-environment=docker-b&var-apiUrl=mbscore&var-gatewayUrl=%2Fposition%2Fmbscore_3&var-solr=position&var-emptyType=empty"
+            },
+            {
+                "name": "简历搜索",
+                "url": "https://grafana.zhaopin.com/d/4nKMvtmZk/sou-suo-apijian-kong-jian-li?refresh=5m&orgId=1&var-environment=docker-a&var-apiUrl=resume&var-gatewayUrl=%2Fresume%2Fresume&var-solr=All&var-emptyType=empty"
+            },
+            {
+                "name": "搜索Api",
+                "url": "https://grafana.zhaopin.com/d/2wTaHdYmk/sou-suo-apijian-kong?refresh=30s&orgId=1"
             }
         ]
     }

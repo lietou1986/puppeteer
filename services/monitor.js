@@ -31,12 +31,11 @@ async function screenshotPage(page, group, url) {
     logger.info("begin screenshort page [%s] page...", url.url);
     await page.goto(url.url);
     await page.setViewport({
-        width: 1200,
-        height: 800
+        width: 1800,
+        height:2600
     });
-
+    await page.waitFor(3000);
     await autoScroll(page);
-
     await page.screenshot({
         path: 'data/screenshot/' + group.name + '_' + url.name + '.png',
         fullPage: true
@@ -48,7 +47,7 @@ function autoScroll(page) {
     return page.evaluate(() => {
         return new Promise((resolve, reject) => {
             var totalHeight = 0;
-            var distance = 100;
+            var distance = 200;
             var timer = setInterval(() => {
                 var scrollHeight = document.body.scrollHeight;
                 window.scrollBy(0, distance);
@@ -57,7 +56,7 @@ function autoScroll(page) {
                     clearInterval(timer);
                     resolve();
                 }
-            }, 100);
+            }, 200);
         })
     });
 }

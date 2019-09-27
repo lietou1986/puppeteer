@@ -8,9 +8,5 @@ logger.info("monitor screenshot begin...");
     //抓屏
     await monitor.screenshot();
 
-
-
-
-
     process.exit()
 })();
