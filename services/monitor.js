@@ -36,10 +36,10 @@ async function screenshotPage(page, group, url) {
     logger.info("begin screenshort page [%s] page...", url.url);
     await page.goto(url.url);
     await page.setViewport({
-        width: 1800,
-        height:2600
+        width: 2000,
+        height:3000
     });
-    await page.waitFor(6000);
+    await page.waitFor(7000);
     await autoScroll(page);
     await page.screenshot({
         path: 'data/screenshot/' + group.name + '_' + url.name + '.png',

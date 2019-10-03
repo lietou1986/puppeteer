@@ -5,8 +5,37 @@
                 "url": "https://grafana.zhaopin.com/d/1BBuueQmz/solrde-cpujian-kong?refresh=1m&orgId=1"
             },
             {
-                "name": "服务器监控",
-                "url": "https://grafana.zhaopin.com/d/deVt2T8mz/solrfu-wu-qi-jian-kong?orgId=1&from=now-5m&to=now&var-positionIp=http:%2F%2F172.25.7.69:8081%2Fsolr&var-recommendIp=All&var-resumeIp=All"
+                "name": "阿里67-69-77",
+                "url": "https://grafana.zhaopin.com/d/7VdrdlOWk/solrcloud-dashboard-jian-li-a-li-7-67-69-77?orgId=1"
+            },
+            {
+                "name": "阿里7-51",
+                "url": "https://grafana.zhaopin.com/d/IDQ8dldWz/solrcloud-dashboard-jian-li-a-li-7-51?refresh=5m&orgId=1"
+            }
+            ,
+            {
+                "name": "搜索平台91-100",
+                "url": "https://grafana.zhaopin.com/d/CBPSA3vWk/solrcloud-dashboard-sou-suo-ping-tai-91-100?refresh=30s&orgId=1"
+            }
+            ,
+            {
+                "name": "职位推荐91-11-15",
+                "url": "https://grafana.zhaopin.com/d/jWsso3DWk/solrcloud-dashboard-zhi-wei-tui-jian-91-11-15?refresh=30s&orgId=1"
+            }
+            ,
+            {
+                "name": "职位搜索91-11-15",
+                "url": "https://grafana.zhaopin.com/d/cTM7A3vWz/solrcloud-dashboard-zhi-wei-sou-suo-93-11-17?refresh=30s&orgId=1"
+            }
+            ,
+            {
+                "name": "职位阿里7-93-96",
+                "url": "https://grafana.zhaopin.com/d/CsBWAWcWz/solrcloud-dashboard-zhi-wei-a-li-7-93-96?refresh=5m&orgId=1"
+            }
+            ,
+            {
+                "name": "职位阿里7-90-92",
+                "url": "https://grafana.zhaopin.com/d/RemXwncZz/solrcloud-dashboard-zhi-wei-a-li-7-90-92?refresh=5m&orgId=1"
             }
         ]
     },
@@ -18,23 +47,27 @@
             },
             {
                 "name": "职位搜索",
-                "url": "https://grafana.zhaopin.com/d/JmMDMhmZk/sou-suo-apijian-kong-zhi-wei-sou-suo?refresh=15m&orgId=1&var-environment=docker-a&var-environment=docker-b&var-apiUrl=mbscore&var-gatewayUrl=%2Fposition%2Fmbscore_3&var-solr=position&var-emptyType=empty"
+                "url": "https://grafana.zhaopin.com/d/JmMDMhmZk/sou-suo-apijian-kong-zhi-wei-sou-suo?refresh=15m&orgId=1&var-environment=docker-a&var-environment=docker-b&var-apiUrl=All&var-gatewayUrl=All&var-solr=position&var-emptyType=empty"
             },
             {
                 "name": "简历搜索",
-                "url": "https://grafana.zhaopin.com/d/4nKMvtmZk/sou-suo-apijian-kong-jian-li?refresh=5m&orgId=1&var-environment=docker-a&var-apiUrl=resume&var-gatewayUrl=%2Fresume%2Fresume&var-solr=All&var-emptyType=empty"
-            },
-            {
-                "name": "搜索Api",
-                "url": "https://grafana.zhaopin.com/d/2wTaHdYmk/sou-suo-apijian-kong?refresh=30s&orgId=1"
+                "url": "https://grafana.zhaopin.com/d/4nKMvtmZk/sou-suo-apijian-kong-jian-li?refresh=5m&orgId=1&var-environment=docker-a&var-environment=docker-b&var-apiUrl=resume&var-gatewayUrl=All&var-solr=All&var-emptyType=empty"
             }
-        ]
+         ]
     },
     {
         "name": "写入",
         "urls": [{
                 "name": "职位特征写入",
                 "url": "https://grafana.zhaopin.com/d/mk9EkBLiz/solrxie-ru-jian-kong?refresh=10s&orgId=1&from=now-15m&to=now&var-environment=docker-spider&var-pulsar_env=idc-b&var-pulsar_topic=job.partial.solr.result&var-subscription=All&var-collection=All"
+            },
+            {
+                "name": "职位写入",
+                "url": "https://grafana.zhaopin.com/d/mk9EkBLiz/solrxie-ru-jian-kong?refresh=10s&orgId=1&from=now-15m&to=now&var-environment=docker-a&var-environment=docker-b&var-pulsar_env=idc-b&var-pulsar_topic=job.solr.result&var-subscription=All&var-collection=All"
+            },
+            {
+                "name": "简历写入",
+                "url": "https://grafana.zhaopin.com/d/mk9EkBLiz/solrxie-ru-jian-kong?refresh=10s&orgId=1&from=now-15m&to=now&var-environment=docker-a&var-environment=docker-b&var-pulsar_env=idc-b&var-pulsar_topic=resume.solr.result&var-subscription=All&var-collection=All"
             }
         ]
     }
