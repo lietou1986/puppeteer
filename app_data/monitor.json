@@ -5,37 +5,8 @@
                 "url": "https://grafana.zhaopin.com/d/1BBuueQmz/solrde-cpujian-kong?refresh=1m&orgId=1"
             },
             {
-                "name": "阿里67-69-77",
-                "url": "https://grafana.zhaopin.com/d/7VdrdlOWk/solrcloud-dashboard-jian-li-a-li-7-67-69-77?orgId=1"
-            },
-            {
-                "name": "阿里7-51",
-                "url": "https://grafana.zhaopin.com/d/IDQ8dldWz/solrcloud-dashboard-jian-li-a-li-7-51?refresh=5m&orgId=1"
-            }
-            ,
-            {
-                "name": "搜索平台91-100",
-                "url": "https://grafana.zhaopin.com/d/CBPSA3vWk/solrcloud-dashboard-sou-suo-ping-tai-91-100?refresh=30s&orgId=1"
-            }
-            ,
-            {
-                "name": "职位推荐91-11-15",
-                "url": "https://grafana.zhaopin.com/d/jWsso3DWk/solrcloud-dashboard-zhi-wei-tui-jian-91-11-15?refresh=30s&orgId=1"
-            }
-            ,
-            {
-                "name": "职位搜索91-11-15",
-                "url": "https://grafana.zhaopin.com/d/cTM7A3vWz/solrcloud-dashboard-zhi-wei-sou-suo-93-11-17?refresh=30s&orgId=1"
-            }
-            ,
-            {
-                "name": "职位阿里7-93-96",
-                "url": "https://grafana.zhaopin.com/d/CsBWAWcWz/solrcloud-dashboard-zhi-wei-a-li-7-93-96?refresh=5m&orgId=1"
-            }
-            ,
-            {
-                "name": "职位阿里7-90-92",
-                "url": "https://grafana.zhaopin.com/d/RemXwncZz/solrcloud-dashboard-zhi-wei-a-li-7-90-92?refresh=5m&orgId=1"
+                "name": "阿里solr",
+                "url": "https://grafana.zhaopin.com/d/fXYBfB2Zz/solrcloud-dashboard-shai-xuan?refresh=15m&orgId=1&var-cluster=.*91.16.*|.*91.17.*|.*91.18.*|.*91.19.*|.*91.2.*&var-collection=positionCloud.*&var-base_url=All&var-core=All"
             }
         ]
     },
