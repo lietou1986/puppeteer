@@ -8,7 +8,7 @@ const baseDir="data/screenshot/";
 
 exports.screenshot = async function () {
 
-    //清空目录
+    //????
     tools.clearDir(baseDir);
 
     const browser = await puppeteer.launch();
