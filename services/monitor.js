@@ -8,7 +8,6 @@ const baseDir="data/screenshot/";
 
 exports.screenshot = async function () {
 
-    //????
     tools.clearDir(baseDir);
 
     const browser = await puppeteer.launch();
