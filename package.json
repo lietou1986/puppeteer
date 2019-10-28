@@ -10,7 +10,7 @@
     "all": "npm run build && npm run test"
   },
   "dependencies": {
-    "puppeteer": "1.20.0",
+    "puppeteer": "2.0.0",
     "hashmap": "^2.3.0",
     "log4js": "^5.1.0",
     "memory-cache": "^0.2.0",
