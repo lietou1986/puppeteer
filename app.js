@@ -1,3 +1,5 @@
+'use strict';
+
 const monitor = require('./services/monitor');
 const logger = require('./runtime').logger;
 
